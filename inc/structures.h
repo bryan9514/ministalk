@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.h                                        :+:      :+:    :+:   */
+/*   structures.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brturcio <brturcio@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 13:47:29 by brturcio          #+#    #+#             */
-/*   Updated: 2025/04/24 15:55:19 by brturcio         ###   ########.fr       */
+/*   Created: 2025/04/24 15:53:47 by brturcio          #+#    #+#             */
+/*   Updated: 2025/04/24 15:56:42 by brturcio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#ifndef STRUCTURES_H
+# define STRUCTURES_H
 
-#include <stdio.h>
+tudedef
 
-#include "structures.h"
+typedef enum s_tokens
+{
+
+
+} t_tokens;
 
 #endif
