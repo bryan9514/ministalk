@@ -6,7 +6,7 @@
 /*   By: brturcio <brturcio@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 17:15:47 by brturcio          #+#    #+#             */
-/*   Updated: 2025/04/26 19:04:04 by brturcio         ###   ########.fr       */
+/*   Updated: 2025/04/27 11:12:03 by brturcio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*cell_read_line()
 	char	cwd[MYBUFSIZ];
 
 	buf = NULL;
-	ft_getcwd(buf, sizeof(cwd));
+	ft_getcwd(cwd, sizeof(cwd));
 	p(C"%s"RST"$>", cwd);
 	if (getline(&buf, &buf_size, stdin) == -1)
 	{
@@ -42,10 +42,10 @@ int	main()
 {
 	char *line;
 
-	while (0xCE77)
+	while (1)
 	{
 		line = cell_read_line();
-		p("%s\n", line);
+		p("%s", line);
 	}
 	return (EXIT_SUCCESS);
 }
