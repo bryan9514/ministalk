@@ -1,0 +1,55 @@
+==============================
+ GIT WORKFLOW BÁSICO (BRYAN)
+==============================
+
+✅ 1. VER LOS ARCHIVOS CAMBIADOS
+--------------------------------
+git status
+
+✅ 2. AÑADIR CAMBIOS AL COMMIT
+-------------------------------
+Para añadir todo:
+git add .
+
+O solo un archivo específico:
+git add path/to/archivo.c
+
+✅ 3. HACER COMMIT CON MENSAJE
+-------------------------------
+git commit -m "Descripción clara del cambio"
+
+Ejemplos:
+git commit -m "Fix: corrected Makefile rules"
+git commit -m "Add: debug target and comments"
+
+✅ 4. DESCARGAR CAMBIOS DEL REPOSITORIO REMOTO
+-----------------------------------------------
+(Siempre haz esto antes de hacer push)
+
+git pull origin main
+
+👉 Esto actualiza tu rama local con los últimos cambios del repositorio remoto.
+👉 Si hay conflictos, Git te lo dirá y deberás resolverlos manualmente.
+
+✅ 5. SUBIR TUS CAMBIOS
+------------------------
+Una vez que hayas hecho pull y resuelto todo:
+
+git push origin main
+
+📌 Cambia "main" si estás trabajando en otra rama, como "dev":
+git push origin dev
+
+✅ 6. VER EN QUÉ RAMA ESTÁS
+----------------------------
+git branch
+
+✅ 7. PRIMER PUSH DE UNA NUEVA RAMA (SOLO UNA VEZ)
+---------------------------------------------------
+git push -u origin nombre_de_rama
+
+===================================
+⚠️ CONSEJO:
+- Siempre haz `git pull origin main` antes de hacer `git push`.
+- Así evitas conflictos y aseguras que tienes los últimos cambios del equipo.
+
